@@ -123,7 +123,7 @@ int main() {
 	triangulo_superior(5);
 	cout << "Triângulo superior inverso" << endl;
 	triangulo_superior_inverso(5);
-	cout << "ADGDAGDAG  " << endl;
+	cout << "Triângulo equilatero inverso:  " << endl;
 	equi_inverso(5);
 
 	return 0;
