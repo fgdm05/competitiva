@@ -7,7 +7,7 @@ const int MAX_N = 1e7+5;
 vector<pair<long long int,int>> adj[MAX_N];
 long long int dis[MAX_N];
 
-void dekker(pair<long long int,int> root) {
+void dijkstra(pair<long long int,int> root) {
 	dis[root.second] = 0; 
 	priority_queue<pair<long long int,int>, vector<pair<long long int,int>>, greater<pair<long long int,int>>>
 		pq;
@@ -37,7 +37,7 @@ int main() {
 	for (int i = 0; i <= n; i++) {
 		dis[i] = MAX_N;
 	}
-	dekker({MAX_L, 1});
+	dijkstra({MAX_L, 1});
 	for (int i = 1; i <= n; i++) {
 		cout << dis[i] << endl;
 	}
